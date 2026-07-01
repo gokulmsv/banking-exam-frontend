@@ -1,7 +1,6 @@
 import axios from "axios";
 
-// 👉 PUT YOUR REAL RENDER URL HERE
-const BASE_URL = "https://banking-exam-backend.onrender.com/api";
+const BASE_URL = "http://localhost:5000/api";
 
 export const fetchQuestions = async () => {
   const res = await axios.get(`${BASE_URL}/exam/questions`);

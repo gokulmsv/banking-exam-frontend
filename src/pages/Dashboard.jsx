@@ -8,10 +8,10 @@ import RecentActivity from "../components/dashboard/RecentActivity";
 import PerformanceChart from "../components/dashboard/PerformanceChart";
 import QuickMockTests from "../components/dashboard/QuickMockTests";
 
-function Dashboard({ startTest }) {
+function Dashboard({ startTest, setPage }) {
   return (
     <div className="flex">
-      <Sidebar />
+      <Sidebar setPage={setPage} />
 
       <div className="flex-1 bg-slate-100 min-h-screen">
         <Navbar />

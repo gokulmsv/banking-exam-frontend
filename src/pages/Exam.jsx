@@ -82,16 +82,20 @@ function Exam() {
   };
 
   const calculateScore = () => {
-    let score = 0;
+  let score = 0;
 
-    questions.forEach((q) => {
-      if (answers[q.id] === q.answer) {
-        score++;
-      }
-    });
+  questions.forEach((q) => {
+    const selected = answers[q.id];
 
-    return score;
-  };
+    const answerMap = ["A", "B", "C", "D", "E"];
+
+    if (answerMap[selected] === q.correct_answer) {
+      score++;
+    }
+  });
+
+  return score;
+};
 
   if (submitted) {
     return (
