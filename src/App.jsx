@@ -16,9 +16,7 @@ function App() {
 
     case "admin":
       return (
-        <AdminUpload
-          setPage={setPage}
-        />
+        <AdminUpload goToDashboard={() => setPage("dashboard")} />
       );
 
     default:

@@ -122,7 +122,7 @@ function Exam() {
             Banking Mock Test
           </h1>
 
-          <Timer duration={300} onTimeUp={() => setSubmitted(true)} />
+          <Timer duration={1200} onTimeUp={() => setSubmitted(true)} />
         </div>
 
         {/* Stats */}
